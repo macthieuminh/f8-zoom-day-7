@@ -45,9 +45,16 @@ a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
-
+.center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
 .flex {
     display: flex;
+}
+.mtb-50 {
+    margin: 50px 0;
 }
 .container {
     max-width: 1170px;
@@ -75,29 +82,44 @@ a:hover {
 .btn--free {
     background-color: var(--primary-color);
 }
-.btn--send,
 .btn--paid {
     background-color: var(--secondary-color);
 }
 .btn--next {
     background-color: var(--primary-color);
 }
-.btn--send {
-    margin-top: 10px;
+.btn--secondary {
+    margin-top: 20px;
     cursor: pointer;
-    border-radius: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 84px;
+    height: 36px;
+    font-size: 1.6rem;
+    line-height: 1.6;
     color: #fff;
-    transition: all 0.35s;
-    font-size: 1.4rem;
-    width: 96px;
-    height: 40px;
-    padding: 8px;
-    letter-spacing: 1.5px;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    transition: all 0.5s;
+    border: 1px solid var(--secondary-color);
+    text-decoration: none !important;
 }
-.btn--send:hover {
+.btn--secondary:hover {
+    color: var(--secondary-color);
+    background-color: #fff;
+}
+.btn--lg {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 400;
+    height: 42px;
+    width: 180px;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Sans", sans-serif;
 }
 .input--subscribe__email {
     height: 36px;
@@ -118,7 +140,7 @@ a:hover {
 .header__wrapper {
     display: flex;
     width: 100%;
-    min-height: 490px;
+
     background: url(../img/background-image.jpg) no-repeat center;
     background-size: cover;
 }
@@ -204,6 +226,31 @@ a:hover {
     color: #fff;
     font-size: 1.5rem;
 }
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 30px;
+    translate: 0 -50px;
+}
+.banner__title {
+    color: #fff;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.banner__desc {
+    font-size: 1.5rem;
+}
+.banner__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .main {
     margin: 40px 0;
     width: 100%;
@@ -299,8 +346,9 @@ a:hover {
     overflow: hidden;
 }
 .course__img {
-    transition: all 0.5s;
     display: block;
+    width: 100%;
+    transition: all 0.5s;
     object-fit: cover;
 }
 .course__item:hover .course__img {
@@ -393,4 +441,118 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+.stats__wrapper {
+    height: 150px;
+    margin-top: 50px;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.stat {
+    width: 33.33333333%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.stat__img {
+    width: 90px;
+    height: 90px;
+}
+.stat__desc {
+    width: 190px;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.find__courses--bg {
+    background: url(../img/img_bg_find_course.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.find__courses {
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.find__heading,
+.featured__heading {
+    color: #fff;
+    font-size: 3.6rem;
+}
+.find__desc,
+.featured__desc {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.find__inputs {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.find__input,
+.find__input--select {
+    height: 28px;
+    min-width: 240px;
+    font-size: 1.4rem;
+    color: #000;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.find__input:focus,
+.find__input--select:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.find__input--select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    height: 52px;
+}
+.find__input {
+    padding: 10px 30px;
+}
+select,
+::picker(select) {
+    appearance: base-select;
+    border-radius: 12px;
+}
+select {
+    height: 100px;
+}
+option {
+    padding-left: 16px;
+    height: 48px;
+}
+option:checked {
+    background-color: #ccc;
+}
+option:hover,
+option:focus-visible {
+    background-color: var(--secondary-color);
+}
+.featured__courses {
+    margin: 50px 0;
+}
+.featured__heading,
+.featured__desc {
+    text-align: center;
+}
+.featured__heading {
+    color: #000;
+    font-size: 3.6rem;
+}
+.featured__desc {
+    font-size: 1.4rem;
+    color: #000;
 }

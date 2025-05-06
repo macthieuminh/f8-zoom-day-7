@@ -3,12 +3,464 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Index</title>
+        <title>Home</title>
         <!-- CSS -->
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <div class="container"></div>
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="inner">
+                    <div class="container">
+                        <div class="hearder">
+                            <a href="#!" class="logo__btn">
+                                <img src="./img/logo.png" alt="Logo" class="logo" />
+                            </a>
+                            <nav class="nav__wrapper">
+                                <div class="nav__item">
+                                    <a class="nav__link">Home</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Courses</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Events</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Pages</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Portfolio</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Blog</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Shop</a>
+                                </div>
+                                <div class="nav__item">
+                                    <a class="nav__link">Contact</a>
+                                </div>
+                            </nav>
+                            <div class="actions">
+                                <div class="action__btn">
+                                    <img
+                                        class="action__icon"
+                                        src="./icon/search-icon.svg"
+                                        alt="Search Icon" />
+                                </div>
+                                <div class="action__btn">
+                                    <img
+                                        class="action__icon"
+                                        src="./icon/shopping-cart-icon.svg"
+                                        alt="Search Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner">
+                            <p class="banner__desc">
+                                Get Educated with the best teachers
+                            </p>
+                            <h1 class="banner__title">
+                                EDUCATION IS THE BACKBONE <br />
+                                OF A NATION
+                            </h1>
+                            <div class="banner__links">
+                                <a href="" class="btn--secondary btn--lg">Our course</a>
+                                <a href="" class="btn--secondary btn--lg">Enroll now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats__wrapper">
+                <div class="container">
+                    <div class="stats">
+                        <div class="stat">
+                            <img src="./img/stats-02.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">20 Million Students Served</p>
+                        </div>
+                        <div class="stat">
+                            <img src="./img/stats-03.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">Over 1000+ Courses for you</p>
+                        </div>
+                        <div class="stat">
+                            <img src="./img/stats-01.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">Learn anywhere in this world</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="find__courses--bg">
+                <div class="find__courses">
+                    <h2 class="find__heading">Find the Best Courses</h2>
+                    <p class="find__desc">
+                        Find your preferred course from our wide range of courses easily,
+                        with just a one search here
+                    </p>
+                    <div class="find__inputs">
+                        <input
+                            class="find__input"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Course Name" />
+                        <select class="find__input--select" id="course-cateogries">
+                            <option value="Course-Cateogries">Course Cateogries</option>
+                            <option value="Course-One">Course Demo One</option>
+                            <option value="Course-Two">Course Demo Two</option>
+                            <option value="Course-Three">Course Demo Three</option>
+                        </select>
+                        <select class="find__input--select" id="course-level">
+                            <option value="Course-Level">Course Level</option>
+                            <option value="Level-One">Course Level One</option>
+                            <option value="Level-Two">Course Level Two</option>
+                            <option value="Level-Three">Course Level Three</option>
+                        </select>
+                        <select class="find__input--select" id="course-instructors">
+                            <option value="Course-instructors">Course Instructors</option>
+                            <option value="Course-One">Course Instructors One</option>
+                            <option value="Course-Two">Course Instructors Two</option>
+                            <option value="Course-Three">Course Instructors Three</option>
+                        </select>
+                    </div>
+                    <a class="btn--secondary btn--lg" href="#!">Search Course</a>
+                </div>
+            </div>
+            <div class="featured__courses">
+                <div class="container">
+                    <h2 class="featured__heading">Our Featured Courses</h2>
+                    <p class="featured__desc">
+                        Choose the course you need from our wide range of courses online,
+                        start learning today from the best teachers
+                    </p>
+                    <div class="course__list">
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__1.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Chris</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--free">FREE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__2.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher2.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Kate</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">620</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$29</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__3.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher3.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Sarah</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="Member Icon" />
+                                        <p class="member__join">1575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$39</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__1.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Chris</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--free">FREE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__2.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher2.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Kate</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">620</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$29</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__3.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher3.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Sarah</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="Member Icon" />
+                                        <p class="member__join">1575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$39</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__1.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Chris</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--free">FREE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__2.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher2.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Kate</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">620</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$29</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__3.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher3.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Sarah</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="Member Icon" />
+                                        <p class="member__join">1575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$39</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__1.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Chris</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">575</p>
+                                    </div>
+                                    <a href="#" class="btn btn--free">FREE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__item">
+                            <div class="course__img-wrapper">
+                                <img src="./img/item__2.jpg" alt="" class="course__img" />
+                            </div>
+                            <div class="course__detail">
+                                <h2 class="course__title">
+                                    Introduction to PHP language with Ajax & Redux
+                                </h2>
+                                <p class="course__desc">
+                                    In this course, you will learn the of PHP Framework
+                                    and Ajax. This course will build your foundation.
+                                </p>
+                                <div class="course__teacher">
+                                    <img
+                                        src="./img/teacher2.jpg"
+                                        alt=""
+                                        class="teacher__img" />
+                                    <p class="teacher__name">Kate</p>
+                                    <div class="course__members">
+                                        <img
+                                            class="user__icon"
+                                            src="./icon/user-icon.svg"
+                                            alt="" />
+                                        <p class="member__join">620</p>
+                                    </div>
+                                    <a href="#" class="btn btn--paid">$29</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center mtb-50">
+                        <a href="" class="btn--secondary btn--lg">All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
