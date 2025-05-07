@@ -61,17 +61,19 @@ a:hover {
     margin: 0 auto;
 }
 .btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid transparent;
     height: 28px;
     width: 50px;
     font-size: 1.6rem;
     line-height: 1.6;
-    text-align: center;
     padding: 2px 8px;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 12px;
     background-color: #000;
+    transition: all 0.5s;
 }
 .btn:hover {
     translate: 0 -10px;
@@ -111,15 +113,39 @@ a:hover {
     background-color: #fff;
 }
 .btn--lg {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 500;
     height: 42px;
     width: 180px;
     border-radius: 20px;
-    text-align: center;
     text-transform: uppercase;
     font-family: "PT Sans", sans-serif;
+}
+.btn--readnow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 500;
+    height: 42px;
+    width: 160px;
+    border-radius: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.btn--readnow:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
 }
 .input--subscribe__email {
     height: 36px;
@@ -542,7 +568,7 @@ option:focus-visible {
     background-color: var(--secondary-color);
 }
 .featured__courses {
-    margin: 50px 0;
+    margin: 100px 0;
 }
 .featured__heading,
 .featured__desc {
@@ -555,4 +581,238 @@ option:focus-visible {
 .featured__desc {
     font-size: 1.4rem;
     color: #000;
+}
+.choose-the-plan__wrapper,
+.sign-up__wrapper {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up__wrapper {
+    height: 260px;
+    background: linear-gradient(0deg, rgba(120, 61, 240, 1) 0%, rgba(184, 2, 87, 1) 100%);
+}
+.sign-up__wrapper h2,
+.sign-up__wrapper p {
+    color: #fff;
+}
+.choose-the-plan__wrapper h2,
+.sign-up__wrapper h2 {
+    font-size: 3.4rem;
+}
+.choose-the-plan__wrapper p,
+.sign-up__wrapper p {
+    font-size: 1.4rem;
+}
+.plan__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+.plan__item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 10px;
+    flex: 1;
+    min-height: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    transition: all 0.6s;
+}
+.plan__item:hover .btn--start__now {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+}
+.plan__item:hover {
+    scale: 1.08;
+    border-color: var(--primary-color);
+}
+.plan__heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+.plan__price {
+    font-size: 1.7rem;
+}
+.plan__price i {
+    display: inline-block;
+    translate: -10px -40px;
+    font-size: 3rem;
+}
+.plan__price span {
+    font-size: 9rem;
+}
+.plan__item ul {
+    margin: 20px;
+}
+.plan__item ul li + li {
+    margin-top: 10px;
+}
+.btn--start__now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 160px;
+    border-radius: 16px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    color: rgba(0, 0, 0, 0.55);
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.btn--start__now:hover {
+    translate: 0 -10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.testomonial {
+    margin: 50px 0;
+}
+.blogs > h2,
+.blogs > p,
+.testomonial > h2,
+.testomonial > p {
+    text-align: center;
+}
+.blogs h2,
+.testomonial h2 {
+    font-size: 3.4rem;
+}
+.blogs p,
+.testomonial p {
+    font-size: 1.8rem;
+}
+.staff__list {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.staff__item {
+    flex: 1;
+    padding: 14px 40px 14px 100px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+.staff__img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: -6%;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+}
+.staff__name {
+    font-size: 1.8rem;
+}
+.blogs {
+    padding: 50px;
+}
+.blog__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.blog__item {
+    margin: 50px 0;
+    border-radius: 12px;
+    flex: 1;
+}
+.blog__name {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+.blog__stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.blog__desc {
+    margin: 30px 0;
+}
+.blog__img-wrapper {
+    overflow: hidden;
+}
+.blog__name,
+.blog__img {
+    transition: all 0.5s;
+}
+.blog__item:hover .blog__name {
+    color: var(--secondary-color);
+}
+
+.blog__item:hover .blog__img {
+    scale: 1.1;
+}
+.btn--instructor {
+    height: 42px;
+    width: 160px;
+    color: #fff;
+    background-color: var(--secondary-color);
+}
+.instructor {
+    height: 480px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.instructor__left {
+    flex: 1;
+}
+.instructor__img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.instructor__right {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding-left: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.instructor__heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+.instructor__desc {
+    font-size: 1.8rem;
+    width: 380px;
+}
+.brand__list {
+    padding: 50px;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
