@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Courses</title>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-            rel="stylesheet" />
+        <title>Home</title>
         <!-- CSS -->
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="wrapper">
@@ -132,78 +133,84 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="breadcrumb">
-                            <h1 class="breadcrumb__title">Courses</h1>
-                            <p class="breadcrumb__backward">
-                                <a class="breadcrumb__link" href="#">Home</a> /
-                                <a class="breadcrumb__link" href="#!">Courses</a>
+                        <div class="banner">
+                            <p class="banner__desc">
+                                Get Educated with the best teachers
                             </p>
+                            <h1 class="banner__title">
+                                EDUCATION IS THE BACKBONE <br />
+                                OF A NATION
+                            </h1>
+                            <div class="banner__links">
+                                <a href="" class="btn--secondary btn--lg">Our course</a>
+                                <a href="" class="btn--secondary btn--lg">Enroll now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main">
-                <div class="container flex">
-                    <div class="sidebar">
-                        <div class="sidebar__search-wrapper">
-                            <input
-                                type="text"
-                                class="sidebar__search-input"
-                                placeholder="Search Course" />
-                            <img
-                                src="./icon/search-icon.svg"
-                                alt=""
-                                class="sidebar__search-icon" />
+            <div class="stats__wrapper">
+                <div class="container">
+                    <div class="stats">
+                        <div class="stat">
+                            <img src="./img/stats-02.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">20 Million Students Served</p>
                         </div>
-                        <div class="sidebar__category">
-                            <h2 class="sidebar__heading">Topics</h2>
-                            <div class="sidebar__list">
-                                <a href="#!" class="sidebar__item"> Web Design </a>
-                                <a href="#!" class="sidebar__item"> Web Development </a>
-                                <a href="#!" class="sidebar__item"> Data Science </a>
-                                <a href="#!" class="sidebar__item">
-                                    Mathematics & Stats
-                                </a>
-                                <a href="#!" class="sidebar__item">Robotics</a>
-                                <a href="#!" class="sidebar__item">Digital Marketing</a>
-                                <a href="#!" class="sidebar__item">Android Basics</a>
-                                <a href="#!" class="sidebar__item">Machine Learning</a>
-                                <a href="#!" class="sidebar__item"
-                                    >Artiicial Intelligence</a
-                                >
-                            </div>
+                        <div class="stat">
+                            <img src="./img/stats-03.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">Over 1000+ Courses for you</p>
                         </div>
-                        <div class="sidebar__category">
-                            <h2 class="sidebar__heading">Software</h2>
-                            <div class="sidebar__list">
-                                <a href="#!" class="sidebar__item">Photoshop</a>
-                                <a href="#!" class="sidebar__item">Illustrator</a>
-                                <a href="#!" class="sidebar__item">HTML</a>
-                                <a href="#!" class="sidebar__item">CSS</a>
-                                <a href="#!" class="sidebar__item">DJango</a>
-                                <a href="#!" class="sidebar__item">Apple</a>
-                                <a href="#!" class="sidebar__item">Microsoft</a>
-                                <a href="#!" class="sidebar__item">Ubuntu</a>
-                            </div>
-                        </div>
-                        <div class="sidebar__category">
-                            <h2 class="sidebar__heading">Level</h2>
-                            <div class="sidebar__list">
-                                <a href="#!" class="sidebar__item">Beginner</a>
-                                <a href="#!" class="sidebar__item">Intermediate</a>
-                                <a href="#!" class="sidebar__item">Advanced</a>
-                                <a href="#!" class="sidebar__item">Expert</a>
-                            </div>
+                        <div class="stat">
+                            <img src="./img/stats-01.svg" alt="" class="stat__img" />
+                            <p class="stat__desc">Learn anywhere in this world</p>
                         </div>
                     </div>
-                    <div class="content">
-                        <div class="content__top">
-                            <a href="" class="content__type content__type--active">New</a>
-                            <a href="" class="content__type">Trending</a>
-                            <a href="" class="content__type">Popular </a>
-                            <a href="" class="content__type">Best-Selling</a>
-                            <a href="" class="content__type">Best-Selling</a>
-                        </div>
+                </div>
+            </div>
+            <div class="find__courses--bg">
+                <div class="find__courses">
+                    <h2 class="find__heading">Find the Best Courses</h2>
+                    <p class="find__desc">
+                        Find your preferred course from our wide range of courses easily,
+                        with just a one search here
+                    </p>
+                    <div class="find__inputs">
+                        <input
+                            class="find__input"
+                            type="text"
+                            name=""
+                            id=""
+                            placeholder="Course Name" />
+                        <select class="find__input--select" id="course-cateogries">
+                            <option value="Course-Cateogries">Course Cateogries</option>
+                            <option value="Course-One">Course Demo One</option>
+                            <option value="Course-Two">Course Demo Two</option>
+                            <option value="Course-Three">Course Demo Three</option>
+                        </select>
+                        <select class="find__input--select" id="course-level">
+                            <option value="Course-Level">Course Level</option>
+                            <option value="Level-One">Course Level One</option>
+                            <option value="Level-Two">Course Level Two</option>
+                            <option value="Level-Three">Course Level Three</option>
+                        </select>
+                        <select class="find__input--select" id="course-instructors">
+                            <option value="Course-instructors">Course Instructors</option>
+                            <option value="Course-One">Course Instructors One</option>
+                            <option value="Course-Two">Course Instructors Two</option>
+                            <option value="Course-Three">Course Instructors Three</option>
+                        </select>
+                    </div>
+                    <a class="btn--secondary btn--lg" href="#!">Search Course</a>
+                </div>
+            </div>
+            <section>
+                <div class="featured__courses">
+                    <div class="container">
+                        <h2 class="featured__heading">Our Featured Courses</h2>
+                        <p class="featured__desc">
+                            Choose the course you need from our wide range of courses
+                            online, start learning today from the best teachers
+                        </p>
                         <div class="course__list">
                             <div class="course__item">
                                 <div class="course__img-wrapper">
@@ -569,15 +576,276 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pages__nav">
-                            <a href="#!" class="pages__item pages__item--active">1</a>
-                            <a href="#!" class="pages__item">2</a>
-                            <a href="#!" class="pages__item">3</a>
-                            <a class="btn btn--next" href="#!">Next</a>
+                        <div class="center mtb-50">
+                            <a href="" class="btn--secondary btn--lg">All Courses</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section>
+                <div class="sign-up__wrapper">
+                    <h2>Ready to take your Skills to the next Level ?</h2>
+                    <p>
+                        Start learning the skills that you need, start your free trial
+                        today
+                    </p>
+                    <a class="btn btn--secondary btn--lg" href="#!">Sign Up</a>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="choose-the-plan__wrapper">
+                        <h2>Choose the plan you need</h2>
+                        <p>
+                            Pick the plan you ned, we have a wide range of pricing option
+                            to suit your needs, get started today
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="plan__list">
+                        <div class="plan__item">
+                            <h3 class="plan__heading">STARTER</h3>
+                            <p class="plan__price"><i>$</i><span>19</span>/ Month</p>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="btn--start__now">Start Now</a>
+                        </div>
+                        <div class="plan__item">
+                            <h3 class="plan__heading">GROWTH</h3>
+                            <p class="plan__price"><i>$</i><span>29</span>/ Month</p>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="btn--start__now">Start Now</a>
+                        </div>
+                        <div class="plan__item">
+                            <h3 class="plan__heading">PREMIUM</h3>
+                            <p class="plan__price"><i>$</i><span>49</span>/ Month</p>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="btn--start__now">Start Now</a>
+                        </div>
+                        <div class="plan__item">
+                            <h3 class="plan__heading">ENTERPRISE</h3>
+                            <p class="plan__price"><i>$</i><span>79</span>/ Month</p>
+                            <ul>
+                                <li>Up to 10 Lessons</li>
+                                <li>Total of 100 hours</li>
+                                <li>Unlimited Support</li>
+                                <li>Free online access</li>
+                            </ul>
+                            <a href="#!" class="btn--start__now">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="testomonial">
+                        <h2>Testomonial</h2>
+                        <p>
+                            What our valuable clients have to say about our courses,
+                            tutorials and online classes
+                        </p>
+                        <div class="staff__list">
+                            <div class="staff__item">
+                                <img src="./img/staff-02.jpg" alt="" class="staff__img" />
+                                <h3 class="staff__name">Riyad Lawrence</h3>
+                                <p class="staff__position">CEO</p>
+                                <p class="staff__desc">
+                                    Scholars website is a great way of learning new
+                                    things, I love their courses.
+                                </p>
+                            </div>
+                            <div class="staff__item">
+                                <img src="./img/staff-01.jpg" alt="" class="staff__img" />
+                                <h3 class="staff__name">Milion Sayfur</h3>
+                                <p class="staff__position">Staff</p>
+                                <p class="staff__desc">
+                                    Scholars website is a great way of learning new
+                                    things, I love their courses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="blogs">
+                        <h2>Latest News</h2>
+                        <p>
+                            Want to keep up with the latest news of Scholars? Check out
+                            all the latest news of ours here
+                        </p>
+                        <div class="blog__list">
+                            <div class="blog__item">
+                                <div class="blog__img-wrapper">
+                                    <img
+                                        src="./img/blog-01.jpg"
+                                        alt="Blog Img"
+                                        class="blog__img" />
+                                </div>
+                                <h3 class="blog__name">
+                                    How one of our students empowering Entrepreneurship.
+                                </h3>
+                                <div class="blog__stats">
+                                    <div class="blog__date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        March 10, 2025
+                                    </div>
+                                    <div class="blog__author">
+                                        <i class="fa-solid fa-user"></i>
+                                        Michael
+                                    </div>
+                                    <div class="blog__comments">
+                                        <i class="fa-solid fa-comments"></i>
+                                        10
+                                    </div>
+                                    <div class="blog__likes">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </div>
+                                </div>
+                                <p class="blog__desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on Coursera, she
+                                    was working as a Communications Manager for a bank in
+                                    France and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="btn--readnow">Read Now</a>
+                            </div>
+                            <div class="blog__item">
+                                <div class="blog__img-wrapper">
+                                    <img
+                                        src="./img/blog-02.jpg"
+                                        alt="Blog Img"
+                                        class="blog__img" />
+                                </div>
+                                <h3 class="blog__name">
+                                    Learner story: How I became a Data Scientist by taking
+                                    the courses.
+                                </h3>
+                                <div class="blog__stats">
+                                    <div class="blog__date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        March 10, 2025
+                                    </div>
+                                    <div class="blog__author">
+                                        <i class="fa-solid fa-user"></i>
+                                        Michael
+                                    </div>
+                                    <div class="blog__comments">
+                                        <i class="fa-solid fa-comments"></i>
+                                        10
+                                    </div>
+                                    <div class="blog__likes">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </div>
+                                </div>
+                                <p class="blog__desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on Coursera, she
+                                    was working as a Communications Manager for a bank in
+                                    France and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="btn--readnow">Read Now</a>
+                            </div>
+                            <div class="blog__item">
+                                <div class="blog__img-wrapper">
+                                    <img
+                                        src="./img/blog-03.jpg"
+                                        alt="Blog Img"
+                                        class="blog__img" />
+                                </div>
+                                <h3 class="blog__name">
+                                    Making the leap from data science to a great
+                                    professional?
+                                </h3>
+                                <div class="blog__stats">
+                                    <div class="blog__date">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        March 10, 2025
+                                    </div>
+                                    <div class="blog__author">
+                                        <i class="fa-solid fa-user"></i>
+                                        Michael
+                                    </div>
+                                    <div class="blog__comments">
+                                        <i class="fa-solid fa-comments"></i>
+                                        10
+                                    </div>
+                                    <div class="blog__likes">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </div>
+                                </div>
+                                <p class="blog__desc">
+                                    When Kylia found HEC Paris’ How to Become an
+                                    Entrepreneur for Social Change course on Coursera, she
+                                    was working as a Communications Manager for a bank in
+                                    France and struggling to find meaning in her job
+                                </p>
+                                <a href="#!" class="btn--readnow">Read Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="instructor">
+                    <div class="instructor__left">
+                        <img class="instructor__img" src="./img/instructor.jpg" />
+                    </div>
+                    <div class="instructor__right">
+                        <h2 class="instructor__heading">Become an Instructor</h2>
+                        <p class="instructor__desc">
+                            Be a part of the world class institution where we make
+                            leaders. Make a difference in the world by taking the
+                            responsibility. Be different.
+                        </p>
+                        <a href="#" class="btn btn--instructor">LEARN MORE</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="brand__list">
+                    <div class="breand__item">
+                        <img src="./img/brand-01.png" alt="Brand Logo" />
+                    </div>
+                    <div class="breand__item">
+                        <img src="./img/brand-02.png" alt="Brand Logo" />
+                    </div>
+                    <div class="breand__item">
+                        <img src="./img/brand-03.png" alt="Brand Logo" />
+                    </div>
+                    <div class="breand__item">
+                        <img src="./img/brand-04.png" alt="Brand Logo" />
+                    </div>
+                    <div class="breand__item">
+                        <img src="./img/brand-05.png" alt="Brand Logo" />
+                    </div>
+                    <div class="breand__item">
+                        <img src="./img/brand-06.png" alt="Brand Logo" />
+                    </div>
+                </div>
+            </section>
+            <!-- Footers -->
             <div class="footer">
                 <div class="container">
                     <div class="footer__list">
